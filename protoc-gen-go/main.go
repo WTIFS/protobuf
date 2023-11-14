@@ -5,17 +5,21 @@
 // protoc-gen-go is a plugin for the Google protocol buffer compiler to generate
 // Go code. Install it by building this program and making it accessible within
 // your PATH with the name:
+//
 //	protoc-gen-go
 //
 // The 'go' suffix becomes part of the argument for the protocol compiler,
 // such that it can be invoked as:
+//
 //	protoc --go_out=paths=source_relative:. path/to/file.proto
 //
 // This generates Go bindings for the protocol buffer defined by file.proto.
 // With that input, the output will be written to:
+//
 //	path/to/file.pb.go
 //
 // See the README and documentation for protocol buffers to learn more:
+//
 //	https://developers.google.com/protocol-buffers/
 package main
 
@@ -24,7 +28,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/golang/protobuf/internal/gengogrpc"
+	"github.com/wtifs/protobuf/internal/gengogrpc"
 	gengo "google.golang.org/protobuf/cmd/protoc-gen-go/internal_gengo"
 	"google.golang.org/protobuf/compiler/protogen"
 )
